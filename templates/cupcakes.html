@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block title %} Cupcakes! {% endblock %}
+
+{% block content %}
+<h3>Add a new Cupcake</h3>
+<form id="cupcake-form" method="post">
+    <label>Flavor:</label>
+    <input type="text" id="flavor" name="flavor">
+    <label>Size:</label>
+    <input type="text" id="size" name="size">
+    <label>Rating:</label>
+    <input type="number" id="rating" name="rating">
+    <label>Image(URL):</label>
+    <input type="text" id="image" name="image">
+    <button type="submit">Submit</button>
+</form>
+<h3>Cupcakes:</h3>
+<ul id="cupcake-list"></ul>
+
+{% endblock %}
